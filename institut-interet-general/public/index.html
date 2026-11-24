@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Institut des Projets d'Intérêt Général - Arnaud Nouvion</title>
+<meta name="description" content="Observatoires, événements, associations, outils : les projets d'intérêt général conçus et portés par Arnaud Nouvion.">
+<link rel="canonical" href="https://institut-interet-general.org/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://institut-interet-general.org/">
+<meta property="og:title" content="Institut des Projets d'Intérêt Général">
+<meta property="og:description" content="Les projets d'intérêt général conçus et portés par Arnaud Nouvion.">
+<meta property="og:image" content="https://institut-interet-general.org/img/og.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Institut des Projets d'Intérêt Général">
+<meta name="twitter:description" content="Les projets d'intérêt général conçus et portés par Arnaud Nouvion.">
+<meta name="twitter:image" content="https://institut-interet-general.org/img/og.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f1ea;--ink:#1c2340;--muted:#5d6174;--line:#d9d4c7;--accent:#d2462b;--card:#fffdf8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Public Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+/* Header */
+header{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:.08em;font-size:.85rem}
+.brand svg{width:26px;height:26px}
+nav.desk{display:none}
+nav.desk a{margin-left:28px;text-decoration:none;font-size:.92rem;font-weight:500}
+nav.desk a:hover{color:var(--accent)}
+.burger{background:none;border:0;width:40px;height:40px;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:5px;align-items:center}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .2s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;z-index:19;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 20px 16px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border:0}
+/* Intro */
+.intro{padding-top:48px;padding-bottom:32px}
+.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2rem,6vw,3.6rem);line-height:1.05;letter-spacing:-.01em;max-width:16ch}
+.sub{margin-top:18px;max-width:60ch;color:var(--muted);font-size:1.08rem}
+/* Grid */
+#projets{padding-bottom:64px}
+.grid{list-style:none;display:block}
+.card{margin-bottom:28px}
+.card>a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);height:100%;transition:border-color .2s,transform .2s}
+.card>a:hover,.card>a:focus-visible{border-color:var(--ink);transform:translateY(-2px)}
+.shot{aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);background:#e9e4d8}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.shot.empty{display:flex;align-items:center;justify-content:center;font-family:Fraunces,serif;font-size:1.3rem;color:var(--muted);padding:20px;text-align:center}
+.body{padding:16px 18px 20px}
+.meta{display:flex;justify-content:space-between;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.meta .cat{color:var(--accent);font-weight:600}
+.card h2{font-family:Fraunces,serif;font-weight:600;font-size:1.3rem;line-height:1.2;margin-bottom:6px}
+.card p{font-size:.94rem;color:var(--muted)}
+.domain{display:inline-block;margin-top:12px;font-size:.82rem;font-weight:500;border-bottom:1px solid var(--line)}
+/* Qui sommes-nous */
+section.band{border-top:1px solid var(--line);padding:56px 0}
+h2.sec{font-family:Fraunces,serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:28px}
+.bio{display:block}
+.bio img{width:160px;height:160px;object-fit:cover;border-radius:50%;margin-bottom:20px;background:#e9e4d8}
+.bio h3{font-family:Fraunces,serif;font-size:1.5rem;font-weight:600}
+.bio h3 a{font-family:"Public Sans",sans-serif;font-size:.85rem;font-weight:500;margin-left:10px;color:var(--accent)}
+.role{color:var(--accent);font-weight:600;margin:4px 0 16px}
+.bio p{max-width:68ch;margin-bottom:14px}
+.note{font-size:.92rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:14px;margin-top:20px;max-width:68ch}
+.contact a.btn{display:inline-block;margin:6px 12px 6px 0;padding:12px 20px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:500}
+.contact a.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:.85rem;color:var(--muted)}
+footer a{margin-right:16px}
+footer .upd{margin-top:8px}
+@media(min-width:700px){
+  .wrap{padding:0 32px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  .card{margin:0}
+  .bio{display:grid;grid-template-columns:200px 1fr;gap:40px}
+  .bio img{width:200px;height:200px}
+}
+@media(min-width:900px){
+  nav.desk{display:block}
+  .burger,.mobile-menu,.mobile-menu.open{display:none}
+  .intro{padding-top:72px;padding-bottom:44px}
+}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Accueil - Institut des Projets d'Intérêt Général">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="12" height="12" fill="#1c2340"/><rect x="17" y="3" width="12" height="12" fill="#1c2340"/><rect x="3" y="17" width="12" height="12" fill="#1c2340"/><rect x="17" y="17" width="12" height="12" fill="#d2462b"/></svg>
+      IPIG
+    </a>
+    <nav class="desk" aria-label="Navigation principale">
+      <a href="#projets">Projets</a><a href="#qui-sommes-nous">Qui sommes-nous ?</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="menu-mobile">
+  <a href="#projets">Projets</a><a href="#qui-sommes-nous">Qui sommes-nous ?</a><a href="#contact">Contact</a>
+</div>
+
+<main>
+  <section class="wrap intro">
+    <p class="kicker">Arnaud Nouvion - Suricate</p>
+    <h1>Institut des Projets d'Intérêt Général</h1>
+    <p class="sub">Observatoires, événements, associations, classements et outils : des projets conçus et portés pour faire avancer des causes concrètes, chacun avec son propre site.</p>
+  </section>
+
+  <section class="wrap" id="projets" aria-label="Projets">
+    <!-- GRID:START -->
+    <ul class="grid">
+      <li class="card"><a href="https://observatoire-velopartage.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">L'Observatoire du vélo partagé</figure>
+        <div class="body"><div class="meta"><span class="cat">Observatoire</span><span>01</span></div>
+        <h2>L'Observatoire du vélo partagé</h2><p>Initiative citoyenne sur le coût et l'efficacité des vélos en libre-service pour les contribuables.</p><span class="domain">observatoire-velopartage.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://observatoire-titresdepaiement.fr" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Observatoire des titres de paiement</figure>
+        <div class="body"><div class="meta"><span class="cat">Observatoire</span><span>02</span></div>
+        <h2>Observatoire des titres de paiement</h2><p>Titres-restaurant, chèques-vacances, cartes cadeaux : 15 milliards pour le pouvoir d'achat, comment faire mieux, plus simplement ?</p><span class="domain">observatoire-titresdepaiement.fr ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://carteblanche-lieuxpublics.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Carte blanche</figure>
+        <div class="body"><div class="meta"><span class="cat">Événement</span><span>03</span></div>
+        <h2>Carte blanche</h2><p>Une demi-journée pour imaginer d'autres usages aux bâtiments de l'État, sans juger les choix passés.</p><span class="domain">carteblanche-lieuxpublics.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://itinerairebis.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Prenez l'itinéraire bis</figure>
+        <div class="body"><div class="meta"><span class="cat">Événement</span><span>04</span></div>
+        <h2>Prenez l'itinéraire bis</h2><p>Premières Rencontres nationales des stations classées, au Sénat, avec l'ANETT.</p><span class="domain">itinerairebis.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://lepatientinforme.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Le Patient Informé</figure>
+        <div class="body"><div class="meta"><span class="cat">Santé</span><span>05</span></div>
+        <h2>Le Patient Informé</h2><p>Association pour l'accès des patients à l'information sur les traitements reconnus, et son Forum annuel.</p><span class="domain">lepatientinforme.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://artistesavanttout.fr" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Artistes avant tout</figure>
+        <div class="body"><div class="meta"><span class="cat">Culture</span><span>06</span></div>
+        <h2>Artistes avant tout</h2><p>Ce qui marche à Limoges pour les artistes en situation de handicap mental, ouvrons-le à Paris.</p><span class="domain">artistesavanttout.fr ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://uneplacepourlesfemmes.fr" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Une place pour les femmes</figure>
+        <div class="body"><div class="meta"><span class="cat">Culture</span><span>07</span></div>
+        <h2>Une place pour les femmes</h2><p>Place Chassériau, le premier espace public parisien dédié aux femmes : expositions, bourse, sculpture.</p><span class="domain">uneplacepourlesfemmes.fr ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://lemondeestunnous.fr" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Le monde est un nous</figure>
+        <div class="body"><div class="meta"><span class="cat">Média</span><span>08</span></div>
+        <h2>Le monde est un nous</h2><p>Un podcast de fondation avec Daphné Roulier.</p><span class="domain">lemondeestunnous.fr ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://retour-usager.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">RetourUsager</figure>
+        <div class="body"><div class="meta"><span class="cat">Outil</span><span>09</span></div>
+        <h2>RetourUsager</h2><p>Recueillir l'avis structuré des usagers sur les services publics.</p><span class="domain">retour-usager.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://jeparsenvacances.fr" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Je pars en vacances</figure>
+        <div class="body"><div class="meta"><span class="cat">Campagne</span><span>10</span></div>
+        <h2>Je pars en vacances</h2><p>Campagne pour les 90 ans des congés payés, avec ADN Tourisme et l'ANETT.</p><span class="domain">jeparsenvacances.fr ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://sallesparoissiales.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Salles paroissiales</figure>
+        <div class="body"><div class="meta"><span class="cat">Outil</span><span>11</span></div>
+        <h2>Salles paroissiales</h2><p>Ouvrir les salles paroissiales sous-utilisées aux associations locales : méthode et outils gratuits.</p><span class="domain">sallesparoissiales.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://frenchfood40.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">French Food 40</figure>
+        <div class="body"><div class="meta"><span class="cat">Classement</span><span>12</span></div>
+        <h2>French Food 40</h2><p>Le classement annuel de 40 champions français de l'agroalimentaire, PME et ETI.</p><span class="domain">frenchfood40.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://cafe-felix.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Café Félix</figure>
+        <div class="body"><div class="meta"><span class="cat">Quartier</span><span>13</span></div>
+        <h2>Café Félix</h2><p>Projet de café associatif de quartier près de Félix Faure, Paris 15e.</p><span class="domain">cafe-felix.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://artemisia-connect.org" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Artemisia Connect</figure>
+        <div class="body"><div class="meta"><span class="cat">Science</span><span>14</span></div>
+        <h2>Artemisia Connect</h2><p>Communauté scientifique internationale des chercheurs et chercheuses sur l'Artemisia.</p><span class="domain">artemisia-connect.org ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://artemisia-symposium.com" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">ISA 2027</figure>
+        <div class="body"><div class="meta"><span class="cat">Science</span><span>15</span></div>
+        <h2>ISA 2027</h2><p>2e Symposium international sur l'Artemisia, Tenerife, septembre 2027.</p><span class="domain">artemisia-symposium.com ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://maison-artemisia.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Maison de l'Artemisia</figure>
+        <div class="body"><div class="meta"><span class="cat">Science</span><span>16</span></div>
+        <h2>Maison de l'Artemisia</h2><p>Réseau humanitaire autour de l'Artemisia, en quatre langues.</p><span class="domain">maison-artemisia.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://helix.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">HELIX</figure>
+        <div class="body"><div class="meta"><span class="cat">Outil</span><span>17</span></div>
+        <h2>HELIX</h2><p>Outils gratuits pour chercheurs - vos données ne quittent jamais votre navigateur.</p><span class="domain">helix.netlify.app ↗</span></div>
+      </a></li>
+      <li class="card"><a href="https://colormyfactory-villes.netlify.app" target="_blank" rel="noopener">
+        <figure class="shot empty" aria-hidden="true">Color My Factory</figure>
+        <div class="body"><div class="meta"><span class="cat">Éducation</span><span>18</span></div>
+        <h2>Color My Factory</h2><p>Livres éducatifs de Gaëlle Delahaye pour les écoles des communes REP et REP+.</p><span class="domain">colormyfactory-villes.netlify.app ↗</span></div>
+      </a></li>
+    </ul>
+    <!-- GRID:END -->
+  </section>
+
+  <section class="band" id="qui-sommes-nous">
+    <div class="wrap">
+      <h2 class="sec">Qui sommes-nous ?</h2>
+      <div class="bio">
+        <img src="/img/arnaud-nouvion.webp" alt="Portrait d'Arnaud Nouvion" width="200" height="200">
+        <div>
+          <h3>Arnaud Nouvion <a href="[LINKEDIN_URL]" target="_blank" rel="noopener">LinkedIn</a></h3>
+          <p class="role">Fondateur - Créateur de projets d'intérêt général</p>
+          <p>Derrière l'Institut, il y a une seule personne : Arnaud Nouvion, consultant indépendant depuis plus de vingt ans en communication institutionnelle, stratégie de marque, relations presse et gestion de crise.</p>
+          <p>Depuis 2024, il développe sa propre activité : des événements, des classements et des logiciels pour les causes qui lui tiennent à cœur. Chaque projet présenté ici a son propre site, ses propres partenaires et sa propre gouvernance. L'Institut les rassemble pour les rendre lisibles.</p>
+          <p>Les sites sont édités par Suricate, sa société de conseil (EURL), sauf mention contraire sur chacun d'eux.</p>
+          <p class="note">Transparence : Arnaud Nouvion est inscrit au répertoire des représentants d'intérêts de la HATVP. Certains projets sont menés pour ou avec des clients et partenaires, qui sont alors nommés sur le site concerné.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band contact" id="contact">
+    <div class="wrap">
+      <h2 class="sec">Contact</h2>
+      <p style="margin-bottom:16px;max-width:60ch">Un projet à proposer, un partenariat à imaginer, une question sur l'un des sites ?</p>
+      <a class="btn" href="mailto:anouvion@suricate.org">anouvion@suricate.org</a>
+      <a class="btn alt" href="https://bookings.cloud.microsoft/bookwithme/user/8a9e31b0db7848bfaeb77c48d3c526df@suricate.org/meetingtype/yGqCSTG5Q0q9TIz-AuzSig2?bookingcode=2491cfa2-d4dc-4b09-b408-1db3b11536da&amp;anonymous&amp;ismsaljsauthenabled&amp;ep=mcard" target="_blank" rel="noopener">Prendre rendez-vous</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="/mentions-legales.html">Mentions légales</a><span>© Suricate - Arnaud Nouvion</span>
+    <p class="upd"><!-- UPDATED:START -->Captures d'écran actualisées automatiquement chaque semaine.<!-- UPDATED:END --></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.burger'),m=document.getElementById('menu-mobile');
+  function set(o){b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');m.classList.toggle('open',o)}
+  b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true')});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)});
+})();
+</script>
+</body>
+</html>

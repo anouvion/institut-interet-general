@@ -1,7 +1,7 @@
 // Capture les pages d'accueil des sites listés dans sites.json, puis régénère la grille de public/index.html.
 // Usage : node scripts/update.mjs              (captures + grille)
 //         node scripts/update.mjs --render-only (grille seule, sans navigateur)
-import { readFile, writeFile, access } from 'node:fs/promises';
+import { readFile, writeFile, access, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -18,6 +18,7 @@ async function capture() {
   const sharp = (await import('sharp')).default;
   const browser = await chromium.launch();
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce', locale: 'fr-FR' });
+  await mkdir(CAP, { recursive: true });
   const ok = [];
   for (const s of sites) {
     const page = await ctx.newPage();

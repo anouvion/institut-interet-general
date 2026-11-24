@@ -1,10 +1,10 @@
 [
   {
-    "slug": "isa2027",
-    "title": "Artemisia Symposium - ISA 2027",
-    "url": "https://artemisia-symposium.com",
-    "category": "Science",
-    "description": "2e Symposium international sur l'Artemisia, Tenerife, septembre 2027."
+    "slug": "patient-informe",
+    "title": "Le Patient Informé",
+    "url": "https://lepatientinforme.netlify.app",
+    "category": "Santé",
+    "description": "Association pour l'accès des patients à l'information sur les traitements reconnus, et son Forum annuel."
   },
   {
     "slug": "french-food-40",
@@ -14,11 +14,11 @@
     "description": "Le classement annuel de 40 champions français de l'agroalimentaire, PME et ETI."
   },
   {
-    "slug": "patient-informe",
-    "title": "Le Patient Informé",
-    "url": "https://lepatientinforme.netlify.app",
-    "category": "Santé",
-    "description": "Association pour l'accès des patients à l'information sur les traitements reconnus, et son Forum annuel."
+    "slug": "isa2027",
+    "title": "Artemisia Symposium - ISA 2027",
+    "url": "https://artemisia-symposium.com",
+    "category": "Science",
+    "description": "2e Symposium international sur l'Artemisia, Tenerife, septembre 2027."
   },
   {
     "slug": "place-femmes",
@@ -28,11 +28,11 @@
     "description": "Place Chassériau, le premier espace public parisien dédié aux femmes : expositions, bourse, sculpture."
   },
   {
-    "slug": "observatoire-velopartage",
-    "title": "L'Observatoire du vélo partagé",
-    "url": "https://observatoire-velopartage.netlify.app",
-    "category": "Observatoire",
-    "description": "Initiative citoyenne sur le coût et l'efficacité des vélos en libre-service pour les contribuables."
+    "slug": "itineraire-bis",
+    "title": "Prenez l'itinéraire bis",
+    "url": "https://itinerairebis.netlify.app",
+    "category": "Événement",
+    "description": "Premières Rencontres nationales des stations classées, au Sénat, avec l'ANETT."
   },
   {
     "slug": "observatoire-titres",
@@ -49,11 +49,11 @@
     "description": "Une demi-journée pour imaginer d'autres usages aux bâtiments de l'État, sans juger les choix passés."
   },
   {
-    "slug": "itineraire-bis",
-    "title": "Prenez l'itinéraire bis",
-    "url": "https://itinerairebis.netlify.app",
-    "category": "Événement",
-    "description": "Premières Rencontres nationales des stations classées, au Sénat, avec l'ANETT."
+    "slug": "observatoire-velopartage",
+    "title": "L'Observatoire du vélo partagé",
+    "url": "https://observatoire-velopartage.netlify.app",
+    "category": "Observatoire",
+    "description": "Initiative citoyenne sur le coût et l'efficacité des vélos en libre-service pour les contribuables."
   },
   {
     "slug": "artistes-avant-tout",

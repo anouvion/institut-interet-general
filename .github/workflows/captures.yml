@@ -1,0 +1,30 @@
+name: Captures hebdomadaires
+
+on:
+  schedule:
+    - cron: '17 4 * * 1'   # chaque lundi vers 5h17 (heure de Paris en hiver)
+  workflow_dispatch:        # bouton "Run workflow" pour lancer à la main
+  push:
+    paths: ['sites.json']   # relance dès qu'on ajoute ou retire un site
+
+permissions:
+  contents: write
+
+jobs:
+  captures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/update.mjs
+      - name: Commit des captures
+        run: |
+          git config user.name "captures-bot"
+          git config user.email "captures-bot@users.noreply.github.com"
+          git add public
+          git diff --cached --quiet || git commit -m "Captures automatiques du $(date +%Y-%m-%d)"
+          git push

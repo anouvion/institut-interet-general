@@ -1,20 +1,86 @@
 [
-  { "slug": "observatoire-velopartage", "title": "L'Observatoire du vélo partagé", "url": "https://observatoire-velopartage.netlify.app", "category": "Observatoire", "description": "Initiative citoyenne sur le coût et l'efficacité des vélos en libre-service pour les contribuables." },
-  { "slug": "observatoire-titres", "title": "Observatoire des titres de paiement", "url": "https://observatoire-titresdepaiement.fr", "category": "Observatoire", "description": "Titres-restaurant, chèques-vacances, cartes cadeaux : 15 milliards pour le pouvoir d'achat, comment faire mieux, plus simplement ?" },
-  { "slug": "carte-blanche", "title": "Carte blanche", "url": "https://carteblanche-lieuxpublics.netlify.app", "category": "Événement", "description": "Une demi-journée pour imaginer d'autres usages aux bâtiments de l'État, sans juger les choix passés." },
-  { "slug": "itineraire-bis", "title": "Prenez l'itinéraire bis", "url": "https://itinerairebis.netlify.app", "category": "Événement", "description": "Premières Rencontres nationales des stations classées, au Sénat, avec l'ANETT." },
-  { "slug": "patient-informe", "title": "Le Patient Informé", "url": "https://lepatientinforme.netlify.app", "category": "Santé", "description": "Association pour l'accès des patients à l'information sur les traitements reconnus, et son Forum annuel." },
-  { "slug": "artistes-avant-tout", "title": "Artistes avant tout", "url": "https://artistesavanttout.fr", "category": "Culture", "description": "Ce qui marche à Limoges pour les artistes en situation de handicap mental, ouvrons-le à Paris." },
-  { "slug": "place-femmes", "title": "Une place pour les femmes", "url": "https://uneplacepourlesfemmes.fr", "category": "Culture", "description": "Place Chassériau, le premier espace public parisien dédié aux femmes : expositions, bourse, sculpture." },
-  { "slug": "monde-est-un-nous", "title": "Le monde est un nous", "url": "https://lemondeestunnous.fr", "category": "Média", "description": "Un podcast de fondation avec Daphné Roulier." },
-  { "slug": "retour-usager", "title": "RetourUsager", "url": "https://retour-usager.netlify.app", "category": "Outil", "description": "Recueillir l'avis structuré des usagers sur les services publics." },
-  { "slug": "jeparsenvacances", "title": "Je pars en vacances", "url": "https://jeparsenvacances.fr", "category": "Campagne", "description": "Campagne pour les 90 ans des congés payés, avec ADN Tourisme et l'ANETT." },
-  { "slug": "salles-paroissiales", "title": "Salles paroissiales", "url": "https://sallesparoissiales.netlify.app", "category": "Outil", "description": "Ouvrir les salles paroissiales sous-utilisées aux associations locales : méthode et outils gratuits." },
-  { "slug": "french-food-40", "title": "French Food 40", "url": "https://frenchfood40.netlify.app", "category": "Classement", "description": "Le classement annuel de 40 champions français de l'agroalimentaire, PME et ETI." },
-  { "slug": "cafe-felix", "title": "Café Félix", "url": "https://cafe-felix.netlify.app", "category": "Quartier", "description": "Projet de café associatif de quartier près de Félix Faure, Paris 15e." },
-  { "slug": "artemisia-connect", "title": "Artemisia Connect", "url": "https://artemisia-connect.org", "category": "Science", "description": "Communauté scientifique internationale des chercheurs et chercheuses sur l'Artemisia." },
-  { "slug": "isa2027", "title": "ISA 2027", "url": "https://artemisia-symposium.com", "category": "Science", "description": "2e Symposium international sur l'Artemisia, Tenerife, septembre 2027." },
-  { "slug": "maison-artemisia", "title": "Maison de l'Artemisia", "url": "https://maison-artemisia.netlify.app", "category": "Science", "description": "Réseau humanitaire autour de l'Artemisia, en quatre langues." },
-  { "slug": "helix", "title": "HELIX", "url": "https://helix.netlify.app", "category": "Outil", "description": "Outils gratuits pour chercheurs - vos données ne quittent jamais votre navigateur." },
-  { "slug": "color-my-factory", "title": "Color My Factory", "url": "https://colormyfactory-villes.netlify.app", "category": "Éducation", "description": "Livres éducatifs de Gaëlle Delahaye pour les écoles des communes REP et REP+." }
+  {
+    "slug": "isa2027",
+    "title": "Artemisia Symposium - ISA 2027",
+    "url": "https://artemisia-symposium.com",
+    "category": "Science",
+    "description": "2e Symposium international sur l'Artemisia, Tenerife, septembre 2027."
+  },
+  {
+    "slug": "french-food-40",
+    "title": "French Food 40",
+    "url": "https://frenchfood40.netlify.app",
+    "category": "Classement",
+    "description": "Le classement annuel de 40 champions français de l'agroalimentaire, PME et ETI."
+  },
+  {
+    "slug": "patient-informe",
+    "title": "Le Patient Informé",
+    "url": "https://lepatientinforme.netlify.app",
+    "category": "Santé",
+    "description": "Association pour l'accès des patients à l'information sur les traitements reconnus, et son Forum annuel."
+  },
+  {
+    "slug": "place-femmes",
+    "title": "Une place pour les femmes",
+    "url": "https://uneplacepourlesfemmes.fr",
+    "category": "Culture",
+    "description": "Place Chassériau, le premier espace public parisien dédié aux femmes : expositions, bourse, sculpture."
+  },
+  {
+    "slug": "observatoire-velopartage",
+    "title": "L'Observatoire du vélo partagé",
+    "url": "https://observatoire-velopartage.netlify.app",
+    "category": "Observatoire",
+    "description": "Initiative citoyenne sur le coût et l'efficacité des vélos en libre-service pour les contribuables."
+  },
+  {
+    "slug": "observatoire-titres",
+    "title": "Observatoire des titres de paiement",
+    "url": "https://observatoire-titresdepaiement.fr",
+    "category": "Observatoire",
+    "description": "Titres-restaurant, chèques-vacances, cartes cadeaux : 15 milliards pour le pouvoir d'achat, comment faire mieux, plus simplement ?"
+  },
+  {
+    "slug": "carte-blanche",
+    "title": "Carte blanche",
+    "url": "https://carteblanche-lieuxpublics.netlify.app",
+    "category": "Événement",
+    "description": "Une demi-journée pour imaginer d'autres usages aux bâtiments de l'État, sans juger les choix passés."
+  },
+  {
+    "slug": "itineraire-bis",
+    "title": "Prenez l'itinéraire bis",
+    "url": "https://itinerairebis.netlify.app",
+    "category": "Événement",
+    "description": "Premières Rencontres nationales des stations classées, au Sénat, avec l'ANETT."
+  },
+  {
+    "slug": "artistes-avant-tout",
+    "title": "Artistes avant tout",
+    "url": "https://artistesavanttout.fr",
+    "category": "Culture",
+    "description": "Ce qui marche à Limoges pour les artistes en situation de handicap mental, ouvrons-le à Paris."
+  },
+  {
+    "slug": "retour-usager",
+    "title": "RetourUsager",
+    "url": "https://retour-usager.netlify.app",
+    "category": "Outil",
+    "description": "Recueillir l'avis structuré des usagers sur les services publics."
+  },
+  {
+    "slug": "cafe-felix",
+    "title": "Café Félix",
+    "url": "https://cafe-felix.netlify.app",
+    "category": "Quartier",
+    "description": "Projet de café associatif de quartier près de Félix Faure, Paris 15e."
+  },
+  {
+    "slug": "artemisia-connect",
+    "title": "Artemisia Connect",
+    "url": "https://artemisia-connect.org",
+    "category": "Science",
+    "description": "Communauté scientifique internationale des chercheurs et chercheuses sur l'Artemisia."
+  }
 ]

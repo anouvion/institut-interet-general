@@ -1,7 +1,7 @@
 [
   {
     "slug": "isa2027",
-    "title": "Artemisia Symposium - ISA 2027",
+    "title": "Artemisia Symposium",
     "url": "https://artemisia-symposium.com",
     "category": "Science",
     "description": "2e Symposium international sur l'Artemisia, Tenerife, septembre 2027."
@@ -24,6 +24,7 @@
     "slug": "place-femmes",
     "title": "Une place pour les femmes",
     "url": "https://uneplacepourlesfemmes.fr",
+    "captureUrl": "https://uneplacepourlesfemmes.netlify.app",
     "category": "Culture",
     "description": "Place Chassériau, le premier espace public parisien dédié aux femmes : expositions, bourse, sculpture."
   },
@@ -38,6 +39,7 @@
     "slug": "observatoire-titres",
     "title": "Observatoire des titres de paiement",
     "url": "https://observatoire-titresdepaiement.fr",
+    "captureUrl": "https://observatoire-titresdepaiement.netlify.app",
     "category": "Observatoire",
     "description": "Titres-restaurant, chèques-vacances, cartes cadeaux : 15 milliards pour le pouvoir d'achat, comment faire mieux, plus simplement ?"
   },
@@ -59,6 +61,7 @@
     "slug": "artistes-avant-tout",
     "title": "Artistes avant tout",
     "url": "https://artistesavanttout.fr",
+    "captureUrl": "https://artistesavanttout.netlify.app",
     "category": "Culture",
     "description": "Ce qui marche à Limoges pour les artistes en situation de handicap mental, ouvrons-le à Paris."
   },

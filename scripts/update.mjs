@@ -23,14 +23,14 @@ async function capture() {
   for (const s of sites) {
     const page = await ctx.newPage();
     try {
-      await page.goto(s.url, { waitUntil: 'networkidle', timeout: 45000 });
+      await page.goto(s.captureUrl || s.url, { waitUntil: 'networkidle', timeout: 45000 });
       await page.waitForTimeout(2500);
       const png = await page.screenshot({ type: 'png' });
       await sharp(png).resize(1200, 750, { fit: 'cover', position: 'top' }).webp({ quality: 80 }).toFile(path.join(CAP, `${s.slug}.webp`));
       ok.push(s.slug);
       console.log(`OK   ${s.slug}`);
     } catch (e) {
-      console.warn(`ECHEC ${s.slug} (${s.url}) : ${e.message.split('\n')[0]} - capture précédente conservée`);
+      console.warn(`ECHEC ${s.slug} (${s.captureUrl || s.url}) : ${e.message.split('\n')[0]} - capture précédente conservée`);
     } finally { await page.close(); }
   }
   await browser.close();
